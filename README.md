@@ -76,6 +76,23 @@ This repo is a fully local, open-source version. It:
 - Preserves archived records even if the original HF model is deleted
 - Requires no HF account, no API keys, no cloud infrastructure
 
+## Seed the Archive with Pre-Collected Data
+
+The [heretic-org/Heretic-Grimoire-Storage](https://huggingface.co/heretic-org/Heretic-Grimoire-Storage) repository on Hugging Face holds a pre-collected archive of 135+ model reproduce.json files (~2 MB total). Many of these models have since been deleted from HF, but the reproduce data is preserved there.
+
+If you have access to that repo, clone it and seed your local archive before starting the app:
+
+```bash
+# Clone the storage repo (requires access)
+git clone https://huggingface.co/heretic-org/Heretic-Grimoire-Storage
+# Copy its contents into the app's data directory
+cp -r Heretic-Grimoire-Storage/* /path/to/heretic-grimoire/data/
+```
+
+The app indexes all existing files in `data/huggingface.co/` on startup, so the pre-collected records will appear immediately.
+
+**Contributing:** If you have access and have collected additional reproduce.json files from models not yet in the archive, you can contribute by pushing them to the storage repo. Every addition helps preserve the Heretic ecosystem.
+
 ## Features
 
 - Browse all collected Heretic model reproducibility records
