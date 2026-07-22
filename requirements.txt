@@ -1,0 +1,5 @@
+gradio>=6.16.0
+filelock
+python-dotenv
+huggingface_hub
+heretic-llm @ git+https://github.com/p-e-w/heretic.git
