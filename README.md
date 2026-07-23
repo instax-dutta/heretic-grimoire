@@ -1,17 +1,3 @@
----
-title: Heretic Grimoire
-emoji: ⚡
-colorFrom: yellow
-colorTo: red
-sdk: gradio
-sdk_version: 6.19.0
-python_version: '3.13'
-app_file: app.py
-pinned: true
-license: agpl-3.0
-short_description: Archive for heretic generated models which are reproducible.
----
-
 <p align="center">
   <a href="https://github.com/instax-dutta/heretic-grimoire">
     <img src="https://img.shields.io/badge/GitHub-Heretic%20Grimoire-181717?style=for-the-badge&logo=github">
@@ -29,9 +15,9 @@ short_description: Archive for heretic generated models which are reproducible.
 
 <div align="center"><img src="assets/Heretic-Grimoire-Logo.png" alt="Heretic Grimoire Logo" width="25%" /></div>
 
-Heretic Grimoire is an archiving system for [Heretic](https://github.com/p-e-w/heretic)-generated model reproducibility metadata. It collects, indexes, and lets you browse `reproduce.json` files f[...]
+Heretic Grimoire is an archiving system for [Heretic](https://github.com/p-e-w/heretic)-generated model reproducibility metadata. It collects, indexes, and lets you browse `reproduce.json` files from Hugging Face models.
 
-Each `reproduce.json` file is a tiny ~9 KB recipe that can reproduce an entire abliterated LLM **byte-for-byte**. The app provides a searchable table with filtering, CSV export, and an automatic t[...]
+Each `reproduce.json` file is a tiny ~9 KB recipe that can reproduce an entire abliterated LLM **byte-for-byte**. The app provides a searchable table with filtering, CSV export, and an automatic tracker of every Heretic model ever created.
 
 ## Run Locally (Single Command)
 
@@ -67,7 +53,7 @@ Then open **http://127.0.0.1:7860** in your browser.
 
 ## Why This Exists
 
-Hugging Face no longer offers free Basic CPU Spaces. The original [Heretic Grimoire HF Space](https://huggingface.co/spaces/heretic-org/Heretic-Grimoire) (created before the policy change) still w[...]
+Hugging Face no longer offers free Basic CPU Spaces. The original [Heretic Grimoire HF Space](https://huggingface.co/spaces/heretic-org/Heretic-Grimoire) (created before the policy change) still works, but we wanted a fully self-hosted alternative.
 
 This repo is a fully local, open-source version. It:
 
@@ -78,7 +64,7 @@ This repo is a fully local, open-source version. It:
 
 ## Seed the Archive with Pre-Collected Data
 
-The [heretic-org/Heretic-Grimoire-Storage](https://huggingface.co/heretic-org/Heretic-Grimoire-Storage) repository on Hugging Face holds a pre-collected archive of 135+ model reproduce.json files [...]
+The [heretic-org/Heretic-Grimoire-Storage](https://huggingface.co/heretic-org/Heretic-Grimoire-Storage) repository on Hugging Face holds a pre-collected archive of 135+ model reproduce.json files that you can download and use to seed your local archive immediately.
 
 To download the pre-collected data bucket, use the Hugging Face CLI (note: Hugging Buckets don't use Git operations):
 
@@ -130,3 +116,17 @@ heretic --reproduce path/to/reproduce.json
 AGPL-3.0. See [LICENSE](LICENSE).
 
 Based on the original [Heretic Grimoire](https://huggingface.co/spaces/heretic-org/Heretic-Grimoire) by Vinay Umrethe.
+
+---
+
+title: Heretic Grimoire
+emoji: ⚡
+colorFrom: yellow
+colorTo: red
+sdk: gradio
+sdk_version: 6.19.0
+python_version: '3.13'
+app_file: app.py
+pinned: true
+license: agpl-3.0
+short_description: Archive for heretic generated models which are reproducible.
