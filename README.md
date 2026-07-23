@@ -1,3 +1,5 @@
+<div align="center"><img src="assets/Heretic-Grimoire-Logo.png" alt="Heretic Grimoire Logo" width="25%" /></div>
+
 <p align="center">
   <a href="https://github.com/instax-dutta/heretic-grimoire">
     <img src="https://img.shields.io/badge/GitHub-Heretic%20Grimoire-181717?style=for-the-badge&logo=github">
@@ -12,8 +14,6 @@
     <img src="https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white">
   </a>
 </p>
-
-<div align="center"><img src="assets/Heretic-Grimoire-Logo.png" alt="Heretic Grimoire Logo" width="25%" /></div>
 
 Heretic Grimoire is an archiving system for [Heretic](https://github.com/p-e-w/heretic)-generated model reproducibility metadata. It collects, indexes, and lets you browse `reproduce.json` files from Hugging Face models.
 
